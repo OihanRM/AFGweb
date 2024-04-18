@@ -1,0 +1,51 @@
+#loginBox {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+#loginBox form {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginBox label {
+    margin-bottom: 10px;
+}
+
+#loginBox input[type="text"],
+#loginBox input[type="password"],
+#loginBox input[type="submit"] {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginBox input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#loginBox input[type="submit"]:hover {
+    background-color: #555;
+}
+#newAccount {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#newAccount a {
+    color: #333;
+    text-decoration: underline;
+}
+footer {
+    position : fixed;
+    bottom: 0;
+}

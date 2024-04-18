@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/login.css">
+    </head>
+    <body>
+    <div id="header">
+        <h1>AFG</h1>
+        <nav>
+            <ul>
+                <li><a href="#player">Player Data</a></li>
+                <li><a href="#playerScores">Your Scores</a></li>
+                <li><a href="../index.html">Front Page</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="loginBox">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <input type="submit" value="Login">
+        </form>
+        <p id="newAccount">Not registered? <a href="register.html">create account</a></p>
+        
+    </div>
+    <div id="player" class="section">
+        <object type="text/html" data="player.html"></object>
+    </div>
+    <div id="playerScores" class="section">
+        <object type="text/html" data="playerScores.html"></object>
+    </div>
+
+    <footer>    
+        <p>AFG</p>
+    </footer>
+
+    </body>
+</html>
