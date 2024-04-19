@@ -11,8 +11,8 @@ body {
 }
 
 #header {
-    background-color: #333;
-    color: #fff;
+    border-bottom: solid #ffffff;
+    color: #000000;
     text-align: center;
     width: 100%;
 }
@@ -29,13 +29,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
 nav ul li:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    background-color: #555;
+    background-color: #cab7b7;
+    border: solid 1px rgb(216, 182, 182);
+    border-radius: 4px;
 }
 
 #presentation, #user, #play, #scores {
@@ -43,14 +45,41 @@ nav ul li:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    margin: 0; /* Elimina cualquier margen */
     margin-top: 80px; /* Ajuste para dejar espacio para el header */
-    width: 80%;
-    max-width: 600px;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    box-sizing: border-box; 
 }
 
+
+
 footer {
-    background-color: #333;
-    color: #fff;
+    border-top: #333;
+    background-color: #e0dcdc;
+    color: #000000;
     text-align: center;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    #header {
+        border-bottom-width: 2px;
+        /* border-bottom-color: #ffffff; */
+        border-bottom-style: solid;
+        padding: 20px 0;
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+    }
+
+    #header::before {
+        content: "";
+        position: absolute;
+        left: 15%;
+        right: 15%;
+        bottom: 0;
+        height: 2px;
+        background-color: #333;
+    }
 }
